@@ -57,6 +57,30 @@
       opacity: 0.95;
     }
 
+    .updated {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 12px 0 0;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      color: #ffffff;
+      font-size: 13px;
+      letter-spacing: 0.01em;
+    }
+
+    .updated-label {
+      opacity: 0.88;
+      font-weight: 500;
+    }
+
+    .updated time {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
     .section {
       padding: 22px 24px;
       border-top: 1px solid var(--line);
@@ -114,6 +138,7 @@
 
     @media (max-width: 640px) {
       header h1 { font-size: 24px; }
+      .updated { font-size: 12px; }
       .section { padding: 18px 16px; }
       h2 { font-size: 18px; }
     }
@@ -125,7 +150,7 @@
       <header>
         <h1>Privacy Policy</h1>
         <p>Nexora Explorer</p>
-        <p class="muted">Last updated: 2026-04-19</p>
+        <p class="updated"><span class="updated-label">Last updated</span><time datetime="2026-04-19">2026-04-19</time></p>
       </header>
 
       <section class="section">
@@ -184,64 +209,6 @@
         <h3>8. Contact</h3>
         <p>
           If you have questions about this Privacy Policy, contact:
-          <a href="mailto:support@nexora.app">support@nexora.app</a>
-        </p>
-      </section>
-
-      <section class="section">
-        <div class="lang"><span class="pill">简体中文</span></div>
-        <p>
-          本隐私政策说明 Nexora Explorer（以下简称“本应用”）如何处理您的信息。
-          我们重视您的隐私，仅处理实现文件浏览与传输功能所必需的数据。
-        </p>
-
-        <h3>1. 我们处理的信息</h3>
-        <ul>
-          <li>您主动输入的 SMB 连接信息（如主机地址、用户名、域、共享设置）。</li>
-          <li>SMB 密码仅保存在您设备本地的 Keychain 中。</li>
-          <li>连接配置的元数据可能保存在本地应用存储（UserDefaults）中。</li>
-          <li>您浏览、预览、上传或下载的文件会在实现功能时被处理。</li>
-        </ul>
-
-        <h3>2. 我们不做的事情</h3>
-        <ul>
-          <li>我们不运营用于账号/配置同步的自建云后端。</li>
-          <li>我们不会出售您的个人信息。</li>
-          <li>我们不使用广告 SDK。</li>
-        </ul>
-
-        <h3>3. 本地网络权限说明</h3>
-        <p>
-          本应用申请“本地网络”权限，用于发现并连接您局域网内的 NAS/SMB 服务器。
-          数据传输发生在您的设备与您主动配置连接的服务器之间。
-        </p>
-
-        <h3>4. 数据共享</h3>
-        <p>
-          除非法律法规要求，或为完成您明确发起的服务器连接所必需，
-          我们不会向第三方共享您的数据。
-        </p>
-
-        <h3>5. 数据保留与删除</h3>
-        <ul>
-          <li>您可随时在应用内删除已保存的 SMB 配置。</li>
-          <li>卸载应用后，设备本地应用数据将被移除（以 iOS 实际行为为准）。</li>
-        </ul>
-
-        <h3>6. 儿童隐私</h3>
-        <p>
-          本应用不专门面向 13 岁以下儿童。如您认为儿童向我们提供了个人信息，
-          请联系我们，我们将依法处理。
-        </p>
-
-        <h3>7. 政策更新</h3>
-        <p>
-          我们可能不时更新本政策。更新后会在本页面发布，并更新“最后更新日期”。
-        </p>
-
-        <h3>8. 联系方式</h3>
-        <p>
-          如您对本隐私政策有任何疑问，请联系：
           <a href="mailto:support@nexora.app">support@nexora.app</a>
         </p>
       </section>
